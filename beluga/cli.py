@@ -78,8 +78,6 @@ def main():
             error("method must be GET|DELETE if body is not specified")
         body = None
 
-    auth = BelugaAPIAuth(id=args.token_id, secret=args.token_secret)
-
     if len(args.service) > 0:
         url = "%s/%s/%s" % (args.base_url, args.service, args.path)
     else:
