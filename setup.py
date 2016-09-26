@@ -1,5 +1,7 @@
-from setuptools import setup, find_packages
-
+try:
+    from setuptools import setup, find_packages
+except ImportError:
+    print "You need to install setuptools to continue"
 setup(
     name='beluga',
     version='1.0.0',
